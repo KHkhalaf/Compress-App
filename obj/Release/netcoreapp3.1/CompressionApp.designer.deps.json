@@ -1,0 +1,95 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Microsoft.NETCore.Platforms/5.0.0-preview.6.20305.6": {},
+      "Microsoft.Win32.SystemEvents/5.0.0-preview.6.20305.6": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0-preview.6.20305.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.30506"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.30506"
+          }
+        }
+      },
+      "Ookii.Dialogs.Wpf/1.1.0": {
+        "runtime": {
+          "lib/net45/Ookii.Dialogs.Wpf.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "System.Drawing.Common/5.0.0-preview.6.20305.6": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0-preview.6.20305.6",
+          "Microsoft.Win32.SystemEvents": "5.0.0-preview.6.20305.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.30506"
+          },
+          "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.30506"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.NETCore.Platforms/5.0.0-preview.6.20305.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uKzFJf7TEsCKBMqmEMhJNPH0nmmBlH8VSTMZc0/s7v9xcQU9UeLrTGckZgfV6up1rIrDl7oRRP4FMdh3f+OYww==",
+      "path": "microsoft.netcore.platforms/5.0.0-preview.6.20305.6",
+      "hashPath": "microsoft.netcore.platforms.5.0.0-preview.6.20305.6.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/5.0.0-preview.6.20305.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+RvVU87p3AUGkSStl+pirJ25jR4IUrEUT23R+9y1OVPXE/4c8Gp2y4jlfllxwsl3oKMZfI7mqy3kpO1I4Hwo8w==",
+      "path": "microsoft.win32.systemevents/5.0.0-preview.6.20305.6",
+      "hashPath": "microsoft.win32.systemevents.5.0.0-preview.6.20305.6.nupkg.sha512"
+    },
+    "Ookii.Dialogs.Wpf/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7VvWZe1PoZHp+MN3nb6gIwXW+DsxUREf+24O9DBDLS+gTmh/F1PYAEnd7AIKXD+Ni7JPjkRXcYAcsdcSo1G3vg==",
+      "path": "ookii.dialogs.wpf/1.1.0",
+      "hashPath": "ookii.dialogs.wpf.1.1.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/5.0.0-preview.6.20305.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YP14JwVTGuVQrnRTNikDGoMKxu2ZL+9Uiv7B+k1V13uP1J908Ipj4c3muXoZkfZ7b6EnGua67qBc5qscVBy4Mg==",
+      "path": "system.drawing.common/5.0.0-preview.6.20305.6",
+      "hashPath": "system.drawing.common.5.0.0-preview.6.20305.6.nupkg.sha512"
+    }
+  }
+}

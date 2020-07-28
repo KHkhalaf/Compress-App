@@ -1,0 +1,61 @@
+﻿<Window x:Class="CompressionApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CompressionApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" /> 
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <TextBox Name="textBox" Visibility="Hidden" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="2" Margin="15"
+                 Width="740" HorizontalAlignment="Left">The text of the uploaded file</TextBox>
+        <Image x:Name="imageSelected" Visibility="Hidden" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="2" Margin="15"
+                 Width="740" HorizontalAlignment="Center"/>
+        <Label Grid.Column="0" Grid.Row="2" Margin="20" Grid.ColumnSpan="3" HorizontalAlignment="Left" Name="filePathlbl">file path : </Label>
+        <StackPanel Grid.Column="0" Grid.Row="3">
+            <StackPanel Orientation="Horizontal" Margin="20,0,20,0">
+                <StackPanel>
+                    <Label HorizontalAlignment="Left">Size Before the operation : </Label>
+                    <Label HorizontalAlignment="Left">Size After the operation : </Label>
+                </StackPanel>
+                <StackPanel Height="50">
+                    <Label HorizontalAlignment="Left" Name="sizeBefore">0 Byte</Label>
+                    <Label HorizontalAlignment="Left" Name="sizeAfter">0 Byte</Label>
+                </StackPanel>
+            </StackPanel>
+            <Button Content="Compress Image Using JpegLossy" Margin="23" HorizontalAlignment="Left" BorderThickness="2" Height="30" Width="195"  VerticalAlignment="Top" Click="CompressImageUsingJpegLossy"/>
+        </StackPanel>
+        <Grid Grid.Column="1" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" Margin="0,0,20,10" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Background="GhostWhite" BorderBrush="Silver" Width="200" Height="180" BorderThickness="1" CornerRadius="8,8,3,3">
+                <StackPanel>
+                    <Button Content="Decompress File (.fano)" Margin="15" HorizontalAlignment="Left" BorderThickness="2" Height="30" Width="165"  VerticalAlignment="Top" Click="DecompressTextFile"/>
+                    <Button Content="Decompress file (.lzw)" Margin="15" HorizontalAlignment="Left" BorderThickness="2" Height="30" Width="165"  VerticalAlignment="Top" Click="DeCompressImageFile"/>
+                    <Button Content="Decompress folder " Margin="15" HorizontalAlignment="Left" BorderThickness="2" Height="30" Width="165"  VerticalAlignment="Top" Click="DeCompressFolder"/>
+                </StackPanel>
+            </Border>
+            <Border Grid.Column="1" Margin="0,0,30,10" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Background="GhostWhite" BorderBrush="Silver" Width="195" Height="180" BorderThickness="1" CornerRadius="8,8,3,3">
+                <StackPanel>
+                    <Button Content="Compress text file (.txt)" Margin="15" HorizontalAlignment="Left" BorderThickness="2" Height="30" Width="160"  VerticalAlignment="Top" Click="CompressTextFile"/>
+                    <Button Content="Compress image file" Margin="15" HorizontalAlignment="Left" BorderThickness="2" Height="30" Width="160"  VerticalAlignment="Top" Click="CompressImageFile"/>
+                    <Button Content="Compress folder " Margin="15" HorizontalAlignment="Left" BorderThickness="2" Height="30" Width="160"  VerticalAlignment="Top" Click="CompressFolder"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+    </Grid>
+</Window>
